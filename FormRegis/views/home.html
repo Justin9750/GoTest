@@ -1,0 +1,39 @@
+{{define "berhasil"}}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="static/css/stylemain.css" rel="stylesheet">
+        <title>Beranda</title>
+    </head>
+    <body>
+      <div class="wrapper">
+        <div class="cover">
+          <div class="navbar">
+            <div class="inner">
+              <h3 class="brand">Landing Page</h3>
+              <nav>
+            <ul class="nav master">
+              <li class="active"><a>Home</a></li>
+              <li><a href="profile">Profile</a></li>
+              <li class="colapsible"><a>Logout</a></li>
+              <div class="confirmation"><p>Apakah anda yakin?</p><a href="login"><button id="back" >Keluar</button></a></div>
+            </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="notif">
+            <h1 class="header">Selamat datang {{.Name}}</h1>
+          </div>
+          <div class="foot">
+            <div class="inner">
+              <p>
+                Copyright (Company Name) 2024. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="/static/jscript.js"></script>
+    </body>
+</html>
+{{end}}

@@ -1,0 +1,43 @@
+{{define "profil"}}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="static/css/stylemain.css" />
+        <title>Profil</title>
+    </head>
+    <body>
+      <div class="wrapper">
+        <div class="cover">
+          <div class="navbar">
+            <div class="inner">
+              <h3 class="brand">Profile Page</h3>
+              <nav>
+            <ul class="nav master">
+              <li><a id="home">Home</a></li>
+              <li class="active"><a>Profile</a></li>
+              <li class="colapsible"><a>Logout</a></li>
+              <div class="confirmation"><p>Apakah anda yakin?</p><a href="login"><button id="back">Keluar</button></a></div>
+            </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="notif">
+          <pre>
+            <h2>Nama Anda    : {{.Name}}</h2>
+            <h2>Email        : {{.Email}}</h2>
+            <h2>Nomor Telepon:      {{.Phone}}</h2>
+          </pre>
+          </div>
+          <div class="foot">
+            <div class="inner">
+              <p>
+                Copyright (Company Name) 2024. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="/static/jscript.js"></script>
+    </body>
+</html>
+{{end}}
