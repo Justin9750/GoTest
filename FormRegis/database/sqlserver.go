@@ -11,7 +11,7 @@ import (
 var Database *gorm.DB
 
 func Init() {
-	dsn := "sqlserver://s21+:diehards21+@172.24.25.62?database=goTest"
+	dsn := "sqlserver://<username>:<password>@<servername>?database=<dbname>"
 	var err error
 	Database,
 		err = gorm.Open(sqlserver.Open(dsn), &gorm.Config{})
